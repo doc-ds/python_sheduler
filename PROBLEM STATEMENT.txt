@@ -5,13 +5,3 @@ As an assignment, we would like you to make a general purpose scheduler(like cro
 2. Some representation of action that the scheduler is supposed to execute.
 
 Think of it in terms of a library that has a very well defined interface to take in the timestamp of trigger and the action to execute. You are required to design this interface and the representation of timestamp and the action suitable to do this as well as implement it. Make your own assumptions.
-
-******************************************************************************************************************************************************************************************************************************************************
-
-INPUT SET:
->> 1,event_repeatedtask  
-
-Enter START date in the format yyyy/mm/dd : 2016/1/1
-Enter End date in the format yyyy/mm/dd 2017/1/1
-Enter the hour(24 hour - format) at which task should be repeated:16
-Enter the minute at which task should be repeated:20

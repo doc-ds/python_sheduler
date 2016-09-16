@@ -1,0 +1,91 @@
+
+As an assignment, we would like you to make a general purpose scheduler(like cron for linux), preferably in Java/Python. This scheduler basically takes in two parameters:
+
+1. The time at which the scheduler starts the execution of the task.
+2. Some representation of action that the scheduler is supposed to execute.
+
+Think of it in terms of a library that has a very well defined interface to take in the timestamp of trigger and the action to execute. You are required to design this interface and the representation of timestamp and the action suitable to do this as well as implement it. Make your own assumptions.
+
+******************************************************************************************************************************************************************************************************************************************************
+Solution:
+
+installation files
+
+>>python 3.5 https://docs.python.org/3/using/windows.html
+>>APScheduler: $ pip install apscheduler
+
+
+***************************************************************************************************************************
+
+INPUT SET:
+
+
+>> 1,event_repeatedtask  
+
+Enter START date in the format yyyy/mm/dd : 2016/1/1
+Enter End date in the format yyyy/mm/dd 2017/1/1
+Enter the hour(24 hour - format) at which task should be repeated:16
+Enter the minute at which task should be repeated:20
+
+Want to secify the task for weekdays PRESS Y/N?
+n
+Waiting for occurence....
+
+output:
+
+Repeated task occurence at time: 
+Sun Aug 14 16:23:00 2016
+
+
+>>2,event_specific_date
+
+Enter the YEAR:YYYY at which task should be repeated:2016
+
+Enter the MONTH:MM at which task should be repeated:8
+
+Enter the DATE:DD at which task should be repeated:14
+
+Enter the hour(24 hour - format) at which task should be repeated:16
+
+Enter the minute at which task should be repeated:26
+
+Enter the interval in seconds!2
+
+output:
+
+ TASK scheduled for specific time:
+Sun Aug 14 16:26:02 2016
+
+EXIT!>>
+
+
+>>3,event_interval
+
+Enter the interval in seconds!5
+
+Enter the interval in hours!0
+Set according to current system time:
+Sun Aug 14 16:29:52 2016
+
+ NOTE: Do NOT append 0 for MM/DD, ex.2/3
+Enter End date in the format Year/Month/Date/Hour/Minute/Seconds 2016/8/14/16/31/5
+Current end-date_time:
+2016-08-14 16:31:05
+
+output:
+
+Process started,current time: 
+Sun Aug 14 16:30:37 2016
+Sun Aug 14 16:30:42 2016
+Sun Aug 14 16:30:47 2016
+Sun Aug 14 16:30:52 2016
+Sun Aug 14 16:30:57 2016
+
+
+>>4,exit
+
+output:
+EXIT!>>
+Sun Aug 14 16:31:02 2016
+
+***************************************************************************************

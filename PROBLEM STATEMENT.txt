@@ -1,5 +1,4 @@
-
-As an assignment, we would like you to make a general purpose scheduler(like cron for linux), preferably in Java/Python. This scheduler basically takes in two parameters:
+As an assignment, we would like you to make a general purpose scheduler(like cron for linux), preferably in Java/Python. this scheduler basically takes in two parameters:
 
 1. The time at which the scheduler starts the execution of the task.
 2. Some representation of action that the scheduler is supposed to execute.
